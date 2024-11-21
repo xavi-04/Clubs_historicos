@@ -85,7 +85,7 @@ button:hover {
 /* Información extendida */
 .info {
   margin-top: 10px;
-  text-align: center; /* Cambiado de left a center */
+  text-align: justify;
   font-size: 0.95rem;
   line-height: 1.5;
   color: #555;

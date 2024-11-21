@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone repository') {
+            steps {
+                git credentialsId: 'github-credentials-id', url: 'https://github.com/xavi-04/Clubs_historicos.git'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    docker.build('linuxweb:latest')
+                }
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                sh 'docker run --rm linuxweb:latest npm test'
+            }
+        }
+        stage('Deploy to DigitalOcean') {
+            steps {
+                script {
+                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-credentials-id') {
+                        docker.image('linuxweb:latest').push('latest')
+                    }
+                }
+                sh 'docker pull xavi355/linuxweb:latest && docker run -d -p 80:80 xavi355/linuxweb:latest'
+            }
+        }
+    }
+}
