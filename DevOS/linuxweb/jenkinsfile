@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git credentialsId: 'github-credentials-id', url: 'https://github.com/xavi-04/Clubs_historicos.git'
+                git credentialsId: 'github-credentials', url: 'https://github.com/xavi-04/Clubs_historicos.git'
             }
         }
         stage('Build Docker Image') {
@@ -22,7 +22,7 @@ pipeline {
         stage('Deploy to DigitalOcean') {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-credentials-id') {
+                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-credentials') {
                         docker.image('linuxweb:latest').push('latest')
                     }
                 }
