@@ -10,7 +10,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build('linuxweb:latest')
+                    docker.build('linuxweb:latest', '-f linuxweb/dockerfile .')
                 }
             }
         }
