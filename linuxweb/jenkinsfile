@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-credentials') {
-                        docker.image('linuxweb:latest').push('latest')
+                        docker.image('xavi355/linuxweb:latest').push('latest')
                     }
                 }
                 sh 'docker pull xavi355/linuxweb:latest && docker run -d -p 80:80 xavi355/linuxweb:latest'
