@@ -1,7 +1,7 @@
 FROM node:17
 WORKDIR /app
-COPY linux-app/package*.json ./
+COPY linuxweb/package*.json ./
 RUN npm install
-COPY linux-app/ ./
+COPY linuxweb/ ./
 EXPOSE 3000
 CMD ["npm", "start"]
