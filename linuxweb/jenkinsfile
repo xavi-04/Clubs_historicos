@@ -26,8 +26,15 @@ pipeline {
                         docker.image('xavi355/linuxweb:latest').push('latest')
                     }
                 }
-                sh 'docker pull xavi355/linuxweb:latest && docker run -d -p 80:90 -p 4000:4000 xavi355/linuxweb:latest'
+                //sh 'docker pull xavi355/linuxweb:latest && docker run -d -p 80:90 -p 4000:4000 xavi355/linuxweb:latest'
+                sh '''
+                docker pull xavi355/linuxweb:latest
+                docker stop linuxweb_container || true
+                docker rm linuxweb_container || true
+                docker run -d --name linuxweb_container -p 8081:80 -p 4000:3000 xavi355/linuxweb:latest
+                '''
             }
         }
     }
 }
+
