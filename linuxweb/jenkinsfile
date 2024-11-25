@@ -10,23 +10,23 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    docker.build('linuxweb:latest', '-f linuxweb/dockerfile .')
+                    docker.build('xavi355/linuxweb:v1', '-f linuxweb/dockerfile .')
                 }
             }
         }
         stage('Run Tests') {
             steps {
-                sh 'docker run --rm linuxweb:latest npm test -- --watchAll=false'
+                sh 'docker run --rm xavi355/linuxweb:v1 npm test -- --watchAll=false'
             }
         }
         stage('Deploy to DigitalOcean') {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-credentials') {
-                        docker.image('xavi355/linuxweb:latest').push('latest')
+                        docker.image('xavi355/linuxweb:v1').push('v1')
                     }
                 }
-                sh 'docker pull xavi355/linuxweb:latest && docker run -d -p 80:90 -p 4000:4000 xavi355/linuxweb:latest'
+                sh 'docker pull xavi355/linuxweb:v1 && docker run -d -p 80:90 -p 4000:4000 xavi355/linuxweb:v1'
             }
         }
     }
