@@ -26,7 +26,7 @@ pipeline {
                         docker.image('xavi355/linuxweb:latest').push('latest')
                     }
                 }
-                sh 'docker pull xavi355/linuxweb:latest && docker run -d -p 80:90 xavi355/linuxweb:latest'
+                sh 'docker pull xavi355/linuxweb:latest && docker run -d -p 8090:80 -p 4000:3000 xavi355/linuxweb:latest'
             }
         }
     }
