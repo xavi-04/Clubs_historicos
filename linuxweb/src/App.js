@@ -56,7 +56,7 @@ const equipos = [
       de las más exitosas de Europa, produciendo estrellas como Thomas Müller y Bastian Schweinsteiger.
     `,
   },
-  /*{
+  {
     nombre: "Manchester United",
     escudo: "/images/Manchester_United.png",
     color: "#da291c", // Rojo intenso (color del uniforme)
@@ -64,7 +64,7 @@ const equipos = [
       Fundado en 1878, el Manchester United es uno de los clubes más populares del mundo. Ha ganado 20 títulos de liga, 
       12 FA Cups y 3 Champions League. Su estadio, Old Trafford, es conocido como "El Teatro de los Sueños".
     `,
-  },*/
+  },
 ];
 
 function App() {

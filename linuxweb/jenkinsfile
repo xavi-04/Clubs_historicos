@@ -28,7 +28,6 @@ pipeline {
                 docker.image('xavi355/linuxweb:v2').push('v2')
                 echo 'Imagen subida correctamente.'
             }
-
                 echo 'Deteniendo y eliminando contenedor anterior (si existe)...'
                 sh '''
                 # Verificar si ya hay un contenedor corriendo con el puerto 3002
@@ -39,7 +38,6 @@ pipeline {
                     docker rm $CONTAINER_ID
                 fi
                 '''
-            
                 echo 'Descargando e iniciando contenedor desde Docker Hub...'
                 sh 'docker pull xavi355/linuxweb:v2'
                 sh 'docker run -d -p 3002:3000 xavi355/linuxweb:v2'
