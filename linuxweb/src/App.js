@@ -14,8 +14,8 @@ const equipos = [
       Fundado el 6 de marzo de 1902, siendo su estadio, el Santiago Bernabéu, es un ícono del fútbol internacional.
       El Real Madrid es el club con más títulos de Champions League (15). Ha ganado 35 títulos de La Liga, 19 Copas del Rey y 5 mundiales de clubes considerandolo como el mejor club del siglo XX por la FIFA. 
       Fue el hogar de figuras legendarias como Alfredo Di Stéfano, Raúl, Cristiano Ronaldo y Zinedine Zidane. Sus momentos históricos, destacan "La Quinta del Buitre" y la era de los Galácticos. 
-      Su filosofía se centra en la grandeza y la excelencia tanto dentro como fuera del campo.
     `,
+    //Su filosofía se centra en la grandeza y la excelencia tanto dentro como fuera del campo.
   },
   {
     nombre: "AC Milan",
