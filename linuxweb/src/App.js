@@ -94,14 +94,6 @@ function App() {
             className="tarjeta"
             style={{ borderTop: `8px solid ${equipo.color}` }}
           >
-          <div
-            key={index}
-            className="tarjeta"
-            style={{
-              borderTop: equipo.borderTop,
-              background: equipo.background || "transparent", // Si tiene gradiente, se aplica
-            }}
-          >
             <img
               src={equipo.escudo}
               alt={`${equipo.nombre} escudo`}
@@ -114,7 +106,7 @@ function App() {
               ))}
             </div>
           </div>
-        </div>))}
+        ))}
       </div>
     </div>
   );
