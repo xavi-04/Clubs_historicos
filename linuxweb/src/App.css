@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9; 
-  color: #febf02e0;
+  color: #ffffff;
   overflow: auto; 
   display: flex;
   flex-direction: column;
@@ -97,7 +97,7 @@ h1 {
   margin: 8px 0;
   font-size: 0.9rem;
   text-align: justify;
-  color: #555;
+  color: #febf02e0;
   line-height: 1.6; 
   word-wrap: break-word; 
 }
@@ -107,7 +107,7 @@ h1 {
   margin: 10px 0 10px;
   font-size: 1.4rem; 
   font-weight: 600;
-  color: #333;
+  color: #000000;
 }
 
 /* Ajustes responsivos */
