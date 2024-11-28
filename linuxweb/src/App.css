@@ -70,7 +70,7 @@ h1 {
   width: 120px;
   height: 120px;
   object-fit: contain;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto; /* Centra el escudo horizontalmente y agrega margen abajo */
 }
 
 /* Estilo de la información */

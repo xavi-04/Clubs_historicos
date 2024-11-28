@@ -9,8 +9,8 @@ const equipos = [
     color: "#febd02", // Amarillo dorado (color de la corona)
     info: `
       Fundado el 6 de marzo de 1902, el Real Madrid es el club con más títulos de Champions League (15).
-      Su estadio es el Santiago Bernabéu. Ha ganado 35 títulos de La Liga, 19 Copas del Rey y es considerado
-      el mejor club del siglo XX por la FIFA, ha sido cuna de grandes figuras como Di Stéfano, Raúl, y Cristiano Ronaldo.
+      Su estadio es el Santiago Bernabéu. Ha ganado 35 títulos de La Liga, 19 Copas del Rey y es considerado el mejor club del siglo XX por la FIFA.
+      Ha sido cuna de grandes figuras como Di Stéfano, Raúl, y Cristiano Ronaldo.
     `,
   },
   {
@@ -18,8 +18,8 @@ const equipos = [
     escudo: "/images/milan.png",
     color: "#ce2324", // Rojo AC Milan
     info: `
-      Fundado el 16 de diciembre de 1899, el AC Milan es uno de los clubes más exitosos de la historia con 7 Champions League, 
-      19 títulos de la Serie A y 5 Copas de Italia. Su estadio, el San Siro (también llamado Stadio Giuseppe Meazza), es compartido con el Inter de Milán.
+      Fundado el 16 de diciembre de 1899, el AC Milan es uno de los clubes más exitosos de la historia con 7 Champions League, 19 títulos de la Serie A y 5 Copas de Italia. 
+      Su estadio, el San Siro (también llamado Stadio Giuseppe Meazza), es compartido con el Inter de Milán.
       El AC Milan es conocido por sus colores rojo y negro, y ha sido hogar de leyendas como Maldini, Baresi, Kaká, Marco van Basten, Andriy Shevchenko.
     `,
   },
@@ -40,7 +40,7 @@ const equipos = [
     info: `
       Fundado el 3 de junio de 1892, el Liverpool es el club más exitoso de Inglaterra en competiciones europeas con 6 Champions League.
       Ha ganado 19 títulos de la Premier League. Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush,
-      y es famoso por su estadio Anfield y su himno "You'll Never Walk Alone", es conocido mundialmente.
+      Y es famoso por su estadio Anfield y su himno "You'll Never Walk Alone", es conocido mundialmente.
     `,
   },
   {
@@ -60,8 +60,7 @@ const equipos = [
     info: `
       Fundado en 1878, el Manchester United ha ganado 20 títulos de liga, 12 FA Cups y 3 Champions League.
       Su estadio, Old Trafford, es conocido como "El Teatro de los Sueños". es uno de los más icónicos del fútbol mundial.
-      Con una gran historia en el fútbol inglés y europeo. Siendo dirigido por figuras como Sir Matt Busby y Sir Alex Ferguson.
-      Ha tenido jugadores legendarios como Sir Bobby Charlton, George Best, y Cristiano Ronaldo, 
+      Con una gran historia en el fútbol inglés y europeo. Siendo dirigido por figuras como Sir Matt Busby y Sir Alex Ferguson asi tambien a tenido jugadores legendarios como Sir Bobby Charlton, George Best, y Cristiano Ronaldo, 
     `,
   },
   
