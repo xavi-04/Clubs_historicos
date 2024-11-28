@@ -4,12 +4,11 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9; /* Fondo minimalista */
   color: #ffffff;
-  overflow: hidden; /* Evita el desplazamiento vertical */
 }
 
 /* Estilo del header */
 .header {
-  color: #333;
+  color: #ffffff;
   padding: 40px 0;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -22,7 +21,7 @@ body {
 /* Título del header */
 h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /* Contenedor de tarjetas */
@@ -34,7 +33,7 @@ h1 {
   max-width: 1200px; 
   align-items: center;
   height: calc(100vh - 120px); /* Ajusta la altura de las tarjetas */
-  padding-top: 10px; /* Ajusta el espaciado entre el header y las tarjetas */
+  padding-top: 5px; /* Ajusta el espaciado entre el header y las tarjetas */
 }
 
 /* Estilo de las tarjetas */
