@@ -17,7 +17,9 @@ const equipos = [
   {
     nombre: "AC Milan",
     escudo: "/images/milan.png",
-    color: "linear-gradient(to right, #8B0000, #000000)", // Degradado rojo y negro
+    // color: "linear-gradient(to right, #8B0000, #000000)", // Degradado rojo y negro
+    borderTop: "8px solid transparent", // Transparent para el gradiente
+    background: "linear-gradient(90deg, #ce2324, #000000)", // Gradiente rojo y negro
     info: `
       Fundado el 16 de diciembre de 1899, el AC Milan es uno de los clubes más exitosos de la historia con 7 Champions League, 19 títulos de la Serie A y 5 Copas de Italia. 
       Su estadio, el San Siro (también llamado Stadio Giuseppe Meazza), es compartido con el Inter de Milán.
@@ -48,7 +50,9 @@ const equipos = [
   {
     nombre: "FC Bayern",
     escudo: "/images/bayern.png",
-    color: "linear-gradient(to right, #005BAC, #DC052D)", // Azul a Rojo
+    //color: "linear-gradient(to right, #005BAC, #DC052D)", // Azul a Rojo
+    borderTop: "8px solid transparent", // Transparent para el gradiente
+    background: "linear-gradient(90deg, #dc052d, #005bac)", // Gradiente rojo y azul
     info: `
       Fundado el 27 de febrero de 1900, el Bayern Múnich domina el fútbol alemán con 33 títulos de la Bundesliga y 6 Champions League.
       Logró el segundo sextete de la historia del fútbol, igualando al FC Barcelona en 2009. Su estadio, el Allianz Arena, es famoso por su arquitectura única.
@@ -58,7 +62,9 @@ const equipos = [
   {
     nombre: "Manchester United",
     escudo: "/images/Manchester_United.png",
-    color: "linear-gradient(to right, #DA291C, #FFCC00)", // Rojo a Amarillo
+    //color: "linear-gradient(to right, #DA291C, #FFCC00)", // Rojo a Amarillo
+    borderTop: "8px solid transparent", // Transparent para el gradiente
+    background: "linear-gradient(90deg, #da291c, #febd02)", // Gradiente rojo y amarillo
     info: `
       Fundado en 1878, el Manchester United ha ganado 20 títulos de liga, 12 FA Cups y 3 Champions League.
       Su estadio, Old Trafford, es conocido como "El Teatro de los Sueños". es uno de los más icónicos del fútbol mundial.
@@ -76,10 +82,18 @@ function App() {
       </header>
       <div className="tarjetas-container">
         {equipos.map((equipo, index) => (
-          <div
+          /*<div
             key={index}
             className="tarjeta"
             style={{ borderTop: `8px solid ${equipo.color}` }}
+          >*/
+          <div
+            key={index}
+            className="tarjeta"
+            style={{
+              borderTop: equipo.borderTop,
+              background: equipo.background || "transparent", // Si tiene gradiente, se aplica
+            }}
           >
             <img
               src={equipo.escudo}
