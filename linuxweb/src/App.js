@@ -17,7 +17,7 @@ const equipos = [
   {
     nombre: "AC Milan",
     escudo: "/images/milan.png",
-    color: "#ce2324", // Rojo AC Milan
+    color: "linear-gradient(to right, #8B0000, #000000)", // Degradado rojo y negro
     info: `
       Fundado el 16 de diciembre de 1899, el AC Milan es uno de los clubes más exitosos de la historia con 7 Champions League, 19 títulos de la Serie A y 5 Copas de Italia. 
       Su estadio, el San Siro (también llamado Stadio Giuseppe Meazza), es compartido con el Inter de Milán.
@@ -48,7 +48,7 @@ const equipos = [
   {
     nombre: "FC Bayern",
     escudo: "/images/bayern.png",
-    color: "#dc052d", // Rojo Bayern
+    color: "linear-gradient(to right, #005BAC, #DC052D)", // Azul a Rojo
     info: `
       Fundado el 27 de febrero de 1900, el Bayern Múnich domina el fútbol alemán con 33 títulos de la Bundesliga y 6 Champions League.
       Logró el segundo sextete de la historia del fútbol, igualando al FC Barcelona en 2009. Su estadio, el Allianz Arena, es famoso por su arquitectura única.
@@ -58,7 +58,7 @@ const equipos = [
   {
     nombre: "Manchester United",
     escudo: "/images/Manchester_United.png",
-    color: "#da291c", // Rojo intenso (color del uniforme)
+    color: "linear-gradient(to right, #DA291C, #FFCC00)", // Rojo a Amarillo
     info: `
       Fundado en 1878, el Manchester United ha ganado 20 títulos de liga, 12 FA Cups y 3 Champions League.
       Su estadio, Old Trafford, es conocido como "El Teatro de los Sueños". es uno de los más icónicos del fútbol mundial.
