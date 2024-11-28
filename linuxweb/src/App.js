@@ -20,7 +20,7 @@ const equipos = [
   {
     nombre: "AC Milan",
     escudo: "/images/milan.png",
-    color: "8px solid #d32f2f", // Rojo (tono más suave)
+    color: "#d32f2f", // Rojo (tono más suave)
     /*borderTop: "8px solid transparent", // Transparent para el gradiente
     background: "linear-gradient(90deg, #ce2324, #000000)", // Gradiente rojo y negro*/
     info: `
@@ -57,7 +57,7 @@ const equipos = [
   {
     nombre: "FC Bayern",
     escudo: "/images/bayern.png",
-    color: "8px solid #c62828", // Rojo (tono más fuerte)
+    color: "#c62828", // Rojo (tono más fuerte)
     /*borderTop: "8px solid transparent", // Transparent para el gradiente
     background: "linear-gradient(90deg, #dc052d, #005bac)", // Gradiente rojo y azul*/
     info: `
@@ -69,7 +69,7 @@ const equipos = [
   {
     nombre: "Manchester United",
     escudo: "/images/Manchester_United.png",
-    color: "8px solid #b71c1c", // Rojo (tono más oscuro)
+    color: "#b71c1c", // Rojo (tono más oscuro)
    /* borderTop: "8px solid transparent", // Transparent para el gradiente
     background: "linear-gradient(90deg, #da291c, #febd02)", // Gradiente rojo y amarillo*/
     info: `
