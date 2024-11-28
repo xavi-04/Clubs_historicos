@@ -9,7 +9,7 @@ describe('App Component', () => {
     const equipos = screen.getAllByRole('heading', { level: 2 }); 
     
     // Verificar que hay más de un jugador
-    expect(equipos.length).toBeGreaterThanOrEqual(3);
+    expect(equipos.length).toBeGreaterThanOrEqual(6);
   });
 
   test('renders a heading with the text containing "⚽"', () => {
