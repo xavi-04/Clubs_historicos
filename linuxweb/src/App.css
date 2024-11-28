@@ -60,6 +60,14 @@ h1 {
   justify-content: space-between;
 }
 
+/* Fondo con gradiente para las tarjetas */
+.tarjeta {
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  border-top: 8px solid transparent; /* Para evitar conflictos */
+}
+
 /* Efecto hover de las tarjetas */
 .tarjeta:hover {
   transform: translateY(-10px); 
