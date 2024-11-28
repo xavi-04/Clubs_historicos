@@ -39,7 +39,6 @@ h1 {
   justify-content: space-around;
   padding: 20px 0; /* Agrega espacio en la parte superior e inferior del contenedor */
   max-height: 90vh; /* Limita la altura máxima del contenedor para dejar espacio para el desplazamiento */
-  overflow-y: auto; /* Habilita el desplazamiento vertical */
 }
 
 /* Estilo de las tarjetas */
@@ -64,7 +63,7 @@ h1 {
   width: 120px;
   height: 120px;
   object-fit: contain;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /* Estilo de la información */
@@ -82,7 +81,6 @@ h1 {
   .tarjetas-container {
     flex-direction: column; /* Cambia a diseño en columna para pantallas pequeñas */
     align-items: center;
-    height: auto; /* Permite desplazamiento si el contenido excede */
     padding-top: 20px; /* Agrega espacio arriba de las tarjetas */
   }
 
