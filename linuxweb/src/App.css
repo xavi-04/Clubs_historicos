@@ -4,7 +4,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9;
   color: #333;
-  overflow: hidden; /* Evita desplazamiento vertical */
+  overflow: hidden; /* Evita desplazamiento vertical si el diseño es fijo */
 }
 
 /* Texto del header */
@@ -12,8 +12,7 @@ body {
   color: #333;
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0; /* Combina márgenes superior e inferior */
 }
 
 /* Contenedor de tarjetas */
@@ -21,41 +20,63 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 20px; /* Espaciado uniforme entre tarjetas */
   margin: 0 auto;
-  height: calc(100vh - 100px); /* Ajusta para ocupar toda la altura de la pantalla */
-  max-width: 1200px;
+  height: calc(100vh - 120px); /* Ajusta altura total restando header y márgenes */
+  max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
 }
 
 /* Estilo de las tarjetas */
 .tarjeta {
-  background-color: white;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
   width: 280px;
-  height: 380px; /* Altura fija para todas las tarjetas */
+  height: 380px; /* Altura fija uniforme */
   padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease; /* Animación de escala */
 }
 
+.tarjeta:hover {
+  transform: translateY(-10px); /* Efecto de flotación al pasar el mouse */
+}
+
+/* Estilo del escudo */
 .escudo {
   width: 100px;
   height: 100px;
-  object-fit: contain;
-  margin: 0 auto;
+  object-fit: contain; /* Mantiene proporciones del escudo */
+  margin: 0 auto 15px; /* Espaciado inferior */
 }
 
+/* Estilo de la información */
 .info {
   text-align: justify;
   font-size: 0.9rem;
   line-height: 1.5;
   color: #555;
-  overflow-y: auto; /* Por si el contenido excede */
+  overflow-y: auto; /* Activa scroll si el contenido excede el área */
+  max-height: 150px; /* Limita altura del texto para uniformidad */
 }
 
 .info p {
-  margin: 5px 0;
+  margin: 5px 0; /* Espaciado entre párrafos */
+}
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+  .tarjetas-container {
+    flex-direction: column; /* Cambia a diseño en columna para pantallas pequeñas */
+    align-items: center;
+    height: auto; /* Permite desplazamiento si el contenido excede */
+  }
+
+  .tarjeta {
+    margin-bottom: 20px; /* Añade separación entre tarjetas */
+  }
 }
