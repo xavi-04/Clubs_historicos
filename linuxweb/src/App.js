@@ -31,8 +31,7 @@ const equipos = [
       Fundado el 29 de noviembre de 1899, el Barcelona ha ganado 5 Champions League, 27 títulos de La Liga y 31 Copas del Rey.
       Es conocido por su academia 'La Masía', de donde han salido jugadores como Messi, Xavi e Iniesta. 
       Su estadio, el Spotify Camp Nou, Barcelona (capacidad: 99,354), es uno de los más icónicos. Su lema es "Més que un club" ("Más que un club"), 
-      reflejando su importancia cultural y social en Cataluña. Conocido por su estilo de juego tiki-taka bajo entrenadores como Pep Guardiola. 
-      En 2009, se convirtió en el primer club en ganar un sextete (6 títulos en una temporada).
+      reflejando su importancia cultural y social en Cataluña. En 2009, se convirtió en el primer club en ganar un sextete (6 títulos en una temporada).
     `,
   },
   /*
