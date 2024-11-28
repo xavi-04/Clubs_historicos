@@ -3,7 +3,7 @@ import "./App.css";
 
 // Datos de los equipos
 const equipos = [
-  {
+  /*{
     nombre: "Real Madrid",
     escudo: "/images/real_madrid.png",
     color: "#febd02", // Amarillo dorado (color de la corona)
@@ -12,7 +12,7 @@ const equipos = [
       Su estadio es el Santiago Bernabéu, Madrid (capacidad: 83,168). Ha ganado 35 títulos de La Liga, 19 Copas del Rey y es considerado
       el mejor club del siglo XX por la FIFA, ha sido cuna de grandes figuras como Di Stéfano, Raúl, y Cristiano Ronaldo.
     `,
-  },
+  },*/
   {
     nombre: "AC Milan",
     escudo: "/images/milan.png",
@@ -35,7 +35,7 @@ const equipos = [
       En 2009, se convirtió en el primer club en ganar un sextete (6 títulos en una temporada).
     `,
   },
-  {
+  /*{
     nombre: "Liverpool",
     escudo: "/images/liverpool.png",
     color: "#c8102e", // Rojo vibrante (color del uniforme)
@@ -44,7 +44,7 @@ const equipos = [
       Ha ganado 19 títulos de la Premier League. Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush y 
       es famoso por su estadio Anfield, Liverpool (capacidad: 54,074) y su himno "You'll Never Walk Alone".
     `,
-  },
+  },*/
   {
     nombre: "FC Bayern",
     escudo: "/images/bayern.png",
@@ -56,7 +56,7 @@ const equipos = [
       de las más exitosas de Europa, produciendo estrellas como Thomas Müller y Bastian Schweinsteiger.
     `,
   },
-  {
+  /*{
     nombre: "Manchester United",
     escudo: "/images/Manchester_United.png",
     color: "#da291c", // Rojo intenso (color del uniforme)
@@ -64,7 +64,7 @@ const equipos = [
       Fundado en 1878, el Manchester United es uno de los clubes más populares del mundo. Ha ganado 20 títulos de liga, 
       12 FA Cups y 3 Champions League. Su estadio, Old Trafford, es conocido como "El Teatro de los Sueños".
     `,
-  },
+  },*/
 ];
 
 function App() {
@@ -77,7 +77,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1>⚽ Los 5 Equipos Históricos del Mundo </h1>
+        <h1>⚽ Los 5 Equipos Históricos del Mundo ⚽</h1>
       </header>
       <div className="tarjetas-container">
         {equipos.map((equipo, index) => (
