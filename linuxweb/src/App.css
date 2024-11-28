@@ -1,13 +1,10 @@
-
-
-
 /* Estilos globales */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9; /* Fondo minimalista */
   color: #333;
-  overflow: hidden; /* Evita el desplazamiento vertical */
+  overflow: auto; /* Permite el desplazamiento si es necesario */
 }
 
 /* Estilo del header */
@@ -38,10 +35,11 @@ h1 {
   margin: 0 auto;
   max-width: 1200px;
   align-items: center;
-  height: calc(100vh - 10vh); /* Ajusta la altura de las tarjetas para el resto del espacio */
-  padding-top: 0; /* Elimina el padding extra */
   flex-wrap: wrap; /* Permite que las tarjetas se acomoden en varias filas si es necesario */
   justify-content: space-around;
+  padding: 20px 0; /* Agrega espacio en la parte superior e inferior del contenedor */
+  max-height: 90vh; /* Limita la altura máxima del contenedor para dejar espacio para el desplazamiento */
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
 }
 
 /* Estilo de las tarjetas */
@@ -49,12 +47,12 @@ h1 {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 280px;
-  height: 380px; /* Mantiene las tarjetas de un tamaño fijo */
+  width: 320px; /* Aumenta ligeramente el tamaño de las tarjetas */
+  height: auto; /* Deja que la altura se ajuste según el contenido */
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease; /* Agrega animación en hover */
-  overflow: hidden; /* Asegura que el contenido no se desborde */
+  overflow: visible; /* Asegura que todo el contenido de las tarjetas sea visible */
 }
 
 .tarjeta:hover {
@@ -75,12 +73,8 @@ h1 {
   font-size: 0.9rem;
   text-align: justify;
   color: #555;
-  overflow: hidden; /* Evita que el texto se desborde */
-  text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
-  max-height: 100px; /* Limita la cantidad de texto visible */
-  display: -webkit-box;
-  -webkit-line-clamp: 5; /* Limita el número de líneas visibles */
-  -webkit-box-orient: vertical;
+  overflow: visible; /* Asegura que el texto sea visible completo */
+  word-wrap: break-word; /* Evita que el texto se desborde fuera del contenedor */
 }
 
 /* Ajustes responsivos */
