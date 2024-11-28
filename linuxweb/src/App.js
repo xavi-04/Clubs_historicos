@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1>⚽ Clubes Históricos ⚽</h1>
+        <h1>⚽ Clubes Históricos del Futbol⚽</h1>
       </header>
       <div className="tarjetas-container">
         {equipos.map((equipo, index) => (
