@@ -6,7 +6,7 @@ const equipos = [
   {
     nombre: "Real Madrid",
     escudo: "/images/real_madrid.png",
-    color: "#febd02", // Amarillo dorado (color de la corona)
+    borderTop: "#febd02", // Amarillo dorado (color de la corona)
     info: `
       Fundado el 6 de marzo de 1902, siendo su estadio, el Santiago Bernabéu, es un ícono del fútbol internacional.
       El Real Madrid es el club con más títulos de Champions League (15). Ha ganado 35 títulos de La Liga, 19 Copas del Rey y 5 mundiales de clubes considerandolo como el mejor club del siglo XX por la FIFA. 
@@ -17,7 +17,7 @@ const equipos = [
   {
     nombre: "AC Milan",
     escudo: "/images/milan.png",
-    color: "linear-gradient(to right, #8B0000, #000000)", // Degradado rojo y negro
+    borderTop: "8px solid linear-gradient(90deg, #ce2324, #000000)", // Rojo y negro
     info: `
       Fundado el 16 de diciembre de 1899, el AC Milan es uno de los clubes más exitosos de la historia con 7 Champions League, 19 títulos de la Serie A y 5 Copas de Italia. 
       Su estadio, el San Siro (también llamado Stadio Giuseppe Meazza), es compartido con el Inter de Milán.
@@ -27,7 +27,7 @@ const equipos = [
   {
     nombre: "FC Barcelona",
     escudo: "/images/barcelona.png",
-    color: "#a50044", // Rojo granate (color del uniforme)
+    borderTop: "#a50044", // Rojo granate (color del uniforme)
     info: `
       Fundado el 29 de noviembre de 1899, el Barcelona ha ganado 5 Champions League, 27 títulos de La Liga y 31 Copas del Rey.
       Es famoso por su academia 'La Masía', que ha formado a jugadores como Messi, Xavi e Iniesta. Su estadio, el Camp Nou, es uno de los más grandes e icónicos. 
@@ -37,7 +37,7 @@ const equipos = [
   {
     nombre: "Liverpool",
     escudo: "/images/liverpool.png",
-    color: "#c8102e", // Rojo vibrante (color del uniforme)
+    borderTop: "#c8102e", // Rojo vibrante (color del uniforme)
     info: `
       Fundado el 3 de junio de 1892, el Liverpool es el club más exitoso de Inglaterra en competiciones europeas, con 6 Champions League y ganando 19 títulos de la Premier League y 8 Copas nacionales. 
       Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush, quienes marcaron épocas gloriosas en la historia del club.
@@ -48,7 +48,7 @@ const equipos = [
   {
     nombre: "FC Bayern",
     escudo: "/images/bayern.png",
-    color: "linear-gradient(to right, #005BAC, #DC052D)", // Azul a Rojo
+    borderTop: "8px solid linear-gradient(90deg, #dc052d, #005bac)", // Rojo y azul
     info: `
       Fundado el 27 de febrero de 1900, el Bayern Múnich domina el fútbol alemán con 33 títulos de la Bundesliga y 6 Champions League.
       Logró el segundo sextete de la historia del fútbol, igualando al FC Barcelona en 2009. Su estadio, el Allianz Arena, es famoso por su arquitectura única.
@@ -58,7 +58,7 @@ const equipos = [
   {
     nombre: "Manchester United",
     escudo: "/images/Manchester_United.png",
-    color: "linear-gradient(to right, #DA291C, #FFCC00)", // Rojo a Amarillo
+    borderTop: "8px solid linear-gradient(90deg, #da291c, #febd02)", // Rojo y amarillo
     info: `
       Fundado en 1878, el Manchester United ha ganado 20 títulos de liga, 12 FA Cups y 3 Champions League.
       Su estadio, Old Trafford, es conocido como "El Teatro de los Sueños". es uno de los más icónicos del fútbol mundial.
@@ -77,10 +77,17 @@ function App() {
       <div className="tarjetas-container">
         {equipos.map((equipo, index) => (
           <div
-            key={index}
-            className="tarjeta"
-            style={{ borderTop: `8px solid ${equipo.color}` }}
-          >
+          key={index}
+          className="tarjeta"
+          style={{
+            borderTop: equipo.borderTop.includes("linear-gradient")
+              ? undefined // Gradientes requieren un tratamiento especial en CSS
+              : equipo.borderTop,
+            "--tarjeta-border-gradient": equipo.borderTop.includes("linear-gradient")
+              ? equipo.borderTop.split(" ")[2] // Extraer gradiente
+              : "none",
+          }}
+        >
             <img
               src={equipo.escudo}
               alt={`${equipo.nombre} escudo`}

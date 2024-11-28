@@ -60,12 +60,17 @@ h1 {
   justify-content: space-between;
 }
 
-/* Fondo con gradiente para las tarjetas */
-.tarjeta {
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-top: 8px solid transparent; /* Para evitar conflictos */
+/* Pseudoelemento para el borde superior */
+.tarjeta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px; /* Altura del borde */
+  background: var(--tarjeta-border-gradient, none); /* Gradiente dinámico */
+  z-index: 1; /* Coloca el borde encima */
+  border-radius: 8px 8px 0 0; /* Mantén la curva del borde superior */
 }
 
 /* Efecto hover de las tarjetas */
