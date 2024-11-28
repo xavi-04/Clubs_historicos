@@ -9,7 +9,7 @@ const equipos = [
     color: "#febd02", // Amarillo dorado (color de la corona)
     info: `
       Fundado el 6 de marzo de 1902, el Real Madrid es el club con más títulos de Champions League (15).
-      Su estadio es el Santiago Bernabéu, Madrid (capacidad: 83,168). Ha ganado 35 títulos de La Liga, 19 Copas del Rey y es considerado
+      Su estadio es el Santiago Bernabéu. Ha ganado 35 títulos de La Liga, 19 Copas del Rey y es considerado
       el mejor club del siglo XX por la FIFA, ha sido cuna de grandes figuras como Di Stéfano, Raúl, y Cristiano Ronaldo.
     `,
   },
@@ -29,10 +29,42 @@ const equipos = [
     color: "#a50044", // Rojo granate (color del uniforme)
     info: `
       Fundado el 29 de noviembre de 1899, el Barcelona ha ganado 5 Champions League, 27 títulos de La Liga y 31 Copas del Rey.
-      Es famoso por su academia 'La Masía', de donde salieron jugadores como Messi, Xavi e Iniesta. Su estadio, el Camp Nou, tiene capacidad para 99,354 espectadores.
-      Ha sido el primer club en ganar un sextete y se considera más que un club debido a su impacto social y cultural en Cataluña.
+      Es famoso por su academia 'La Masía', que ha formado a jugadores como Messi, Xavi e Iniesta. Su estadio, el Camp Nou, es uno de los más grandes e icónicos. 
+      En 2009, el Barcelona fue el primer club en ganar un sextete y su lema, "Més que un club" ("Más que un club"), refleja su impacto social y cultural en Cataluña.
     `,
   },
+  {
+    nombre: "Liverpool",
+    escudo: "/images/liverpool.png",
+    color: "#c8102e", // Rojo vibrante (color del uniforme)
+    info: `
+      Fundado el 3 de junio de 1892, el Liverpool es el club más exitoso de Inglaterra en competiciones europeas con 6 Champions League.
+      Ha ganado 19 títulos de la Premier League. Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush,
+      y es famoso por su estadio Anfield y su himno "You'll Never Walk Alone", es conocido mundialmente.
+    `,
+  },
+  {
+    nombre: "FC Bayern",
+    escudo: "/images/bayern.png",
+    color: "#dc052d", // Rojo Bayern
+    info: `
+      Fundado el 27 de febrero de 1900, el Bayern Múnich domina el fútbol alemán con 33 títulos de la Bundesliga y 6 Champions League.
+      Logró el segundo sextete de la historia del fútbol, igualando al FC Barcelona en 2009. Su estadio, el Allianz Arena, es famoso por su arquitectura única.
+      Ha sido hogar de figuras como Beckenbauer, Gerd Müller, y Philipp Lahm, y su academia ha producido estrellas como Thomas Müller y Schweinsteiger.
+    `,
+  },
+  {
+    nombre: "Manchester United",
+    escudo: "/images/Manchester_United.png",
+    color: "#da291c", // Rojo intenso (color del uniforme)
+    info: `
+      Fundado en 1878, el Manchester United ha ganado 20 títulos de liga, 12 FA Cups y 3 Champions League.
+      Su estadio, Old Trafford, es conocido como "El Teatro de los Sueños". es uno de los más icónicos del fútbol mundial.
+      Con una gran historia en el fútbol inglés y europeo. Siendo dirigido por figuras como Sir Matt Busby y Sir Alex Ferguson.
+      Ha tenido jugadores legendarios como Sir Bobby Charlton, George Best, y Cristiano Ronaldo, 
+    `,
+  },
+  
 ];
 
 function App() {
@@ -43,12 +75,16 @@ function App() {
       </header>
       <div className="tarjetas-container">
         {equipos.map((equipo, index) => (
-          <div 
-            key={index} 
-            className="tarjeta" 
+          <div
+            key={index}
+            className="tarjeta"
             style={{ borderTop: `8px solid ${equipo.color}` }}
           >
-            <img src={equipo.escudo} alt={`${equipo.nombre} escudo`} className="escudo" />
+            <img
+              src={equipo.escudo}
+              alt={`${equipo.nombre} escudo`}
+              className="escudo"
+            />
             <h2>{equipo.nombre}</h2>
             <div className="info">
               {equipo.info.split("\n").map((line, idx) => (
