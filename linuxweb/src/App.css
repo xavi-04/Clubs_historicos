@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f9; /* Fondo minimalista */
-  color: #333;
+  color: #ffffff;
   overflow: hidden; /* Evita el desplazamiento vertical */
 }
 
@@ -12,7 +12,9 @@ body {
   color: #333;
   padding: 40px 0;
   text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  background-color: #5a5a5a; /* Asegura que el fondo sea blanco y uniforme */
   position: relative; /* Hace que el header se quede en su lugar sin desplazamiento */
   z-index: 10; /* Asegura que esté por encima del contenido */
 }
@@ -20,7 +22,7 @@ body {
 /* Título del header */
 h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 /* Contenedor de tarjetas */
