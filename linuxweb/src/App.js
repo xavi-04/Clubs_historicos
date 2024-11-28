@@ -4,7 +4,7 @@ import "./App.css";
 // Datos de los equipos
 const equipos = [
   {
-    nombre: "Real Madrid",
+    nombre: "El Vardrid",
     escudo: "/images/real_madrid.png",
     color: "#febd02", // Amarillo dorado (color de la corona)
     //borderTop: "8px solid transparent", // Transparent para el gradiente
@@ -30,7 +30,7 @@ const equipos = [
     `,
   },
   {
-    nombre: "FC Barcelona",
+    nombre: "El deudas",
     escudo: "/images/barcelona.png",
     color: "#a50044", // Rojo granate (color del uniforme)
     //borderTop: "8px solid transparent", // Transparent para el gradiente
@@ -41,7 +41,7 @@ const equipos = [
       En 2009, el Barcelona fue el primer club en ganar un sextete y su lema, "Més que un club" ("Más que un club"), refleja su impacto social y cultural en Cataluña.
     `,
   },
-  /*{
+  {
     nombre: "Liverpool",
     escudo: "/images/liverpool.png",
     color: "#c8102e", // Rojo vibrante (color del uniforme)
@@ -77,7 +77,7 @@ const equipos = [
       Su estadio, Old Trafford, es conocido como "El Teatro de los Sueños". es uno de los más icónicos del fútbol mundial.
       Con una gran historia en el fútbol inglés y europeo. Siendo dirigido por figuras como Sir Matt Busby y Sir Alex Ferguson asi tambien a tenido jugadores legendarios como Sir Bobby Charlton, George Best, y Cristiano Ronaldo, 
     `,
-  },*/
+  },
   
 ];
 
@@ -85,7 +85,7 @@ function App() {
   return (
     <div className="App">
       <header className="header">
-        <h1> Clubs Históricos del Futbol </h1>
+        <h1>⚽ Clubs Históricos del Futbol ⚽</h1>
       </header>
       <div className="tarjetas-container">
         {equipos.map((equipo, index) => (
