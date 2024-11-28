@@ -8,9 +8,10 @@ const equipos = [
     escudo: "/images/real_madrid.png",
     color: "#febd02", // Amarillo dorado (color de la corona)
     info: `
-      Fundado el 6 de marzo de 1902, el Real Madrid es el club con más títulos de Champions League (15). Siendo su estadio el Santiago Bernabéu. 
-      Ha ganado 35 títulos de La Liga, 19 Copas del Rey y es considerado el mejor club del siglo XX por la FIFA.
-      Ha sido cuna de grandes figuras como Di Stéfano, Raúl, y Cristiano Ronaldo.
+      Fundado el 6 de marzo de 1902, siendo su estadio, el Santiago Bernabéu, es un ícono del fútbol internacional.
+      El Real Madrid es el club con más títulos de Champions League (15) y uno de los más reconocidos mundialmente. Ha ganado 35 títulos de La Liga, 19 Copas del Rey y 5 mundiales de clubes siendo asi considerado el mejor club del siglo XX por la FIFA. 
+      Fue el hogar de figuras legendarias como Alfredo Di Stéfano, Raúl, Cristiano Ronaldo, Zinedine Zidane y más.
+      Entre sus momentos históricos, destacan "La Quinta del Buitre" y la era de los Galácticos. Su filosofía se centra en la grandeza y la excelencia tanto dentro como fuera del campo.
     `,
   },
   {
@@ -38,9 +39,10 @@ const equipos = [
     escudo: "/images/liverpool.png",
     color: "#c8102e", // Rojo vibrante (color del uniforme)
     info: `
-      Fundado el 3 de junio de 1892, el Liverpool es el club más exitoso de Inglaterra en competiciones europeas con 6 Champions League.
-      Ha ganado 19 títulos de la Premier League. Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush,
-      Y es famoso por su estadio Anfield y su himno "You'll Never Walk Alone", es conocido mundialmente.
+      Fundado el 3 de junio de 1892, el Liverpool es el club más exitoso de Inglaterra en competiciones europeas, con 6 Champions League en su palmarés.
+      Ha ganado 19 títulos de la Premier League y 8 Copas de la Liga. Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush, quienes han marcado épocas gloriosas en la historia del club.
+      En los últimos años, el técnico Jürgen Klopp lideró al equipo para conquistar su primer título de Premier League en 2020, tras una sequía de 30 años.
+      Liverpool es sinónimo de pasión y resiliencia, reflejando el espíritu de su ciudad.
     `,
   },
   {
