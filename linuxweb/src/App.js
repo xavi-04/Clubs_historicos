@@ -102,6 +102,14 @@ function App() {
               background: equipo.background || "transparent", // Si tiene gradiente, se aplica
             }}
           >
+            <div
+            key={index}
+            className={`tarjeta ${equipo.nombre === 'Real Madrid' ? '' : 'tarjeta-oscura'}`}
+            style={{
+            borderTop: `8px solid ${equipo.color}`,
+            background: equipo.nombre === "Real Madrid" ? 'linear-gradient(to right, white, #febd02)' : 'none'
+            }}
+            />
             <img
               src={equipo.escudo}
               alt={`${equipo.nombre} escudo`}

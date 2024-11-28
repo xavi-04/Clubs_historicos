@@ -92,12 +92,17 @@ h1 {
   margin: 0 auto 15px auto; 
 }
 
+.tarjeta {
+  background-color: white; /* fondo blanco para Real Madrid */
+  color: #333333; /* Texto oscuro en fondo blanco */
+}
+
 /* Estilo de la información */
 .info p {
   margin: 8px 0;
   font-size: 0.9rem;
   text-align: justify;
-  color: #febf02e0;
+  color: #ffffffe0;
   line-height: 1.6; 
   word-wrap: break-word; 
 }
