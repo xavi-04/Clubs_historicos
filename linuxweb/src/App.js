@@ -8,8 +8,8 @@ const equipos = [
     escudo: "/images/real_madrid.png",
     color: "#febd02", // Amarillo dorado (color de la corona)
     info: `
-      Fundado el 6 de marzo de 1902, el Real Madrid es el club con más títulos de Champions League (15).
-      Su estadio es el Santiago Bernabéu. Ha ganado 35 títulos de La Liga, 19 Copas del Rey y es considerado el mejor club del siglo XX por la FIFA.
+      Fundado el 6 de marzo de 1902, el Real Madrid es el club con más títulos de Champions League (15). Siendo su estadio el Santiago Bernabéu. 
+      Ha ganado 35 títulos de La Liga, 19 Copas del Rey y es considerado el mejor club del siglo XX por la FIFA.
       Ha sido cuna de grandes figuras como Di Stéfano, Raúl, y Cristiano Ronaldo.
     `,
   },
