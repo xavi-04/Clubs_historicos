@@ -74,14 +74,14 @@ h1 {
   border-radius: 8px 8px 0 0; /* Mantén la curva del borde superior */
 }
 
-/* Aplicamos gradientes solo a las tarjetas que tengan esta propiedad */
-.tarjeta[data-gradient="true"]::before {
-  background: var(--tarjeta-border-gradient);
-}
-
 /* Efecto hover de las tarjetas */
 .tarjeta:hover {
   transform: translateY(-10px); 
+}
+
+/* Aplicamos gradientes solo a las tarjetas que tengan esta propiedad */
+.tarjeta[data-gradient="true"]::before {
+  background: var(--tarjeta-border-gradient);
 }
 
 /* Estilo del escudo */

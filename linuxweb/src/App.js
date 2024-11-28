@@ -6,7 +6,10 @@ const equipos = [
   {
     nombre: "Real Madrid",
     escudo: "/images/real_madrid.png",
-    color: "#febd02", // Amarillo dorado (color de la corona)
+    //color: "#febd02", // Amarillo dorado (color de la corona)
+    borderTop: "8px solid transparent", // Transparent para el gradiente
+    background: "linear-gradient(90deg, #ffffff, #febd02)", // Blanco y Oro
+    background: "linear-gradient(90deg, #ffffff, #5f4b8b)", // Blanco y morado
     info: `
       Fundado el 6 de marzo de 1902, siendo su estadio, el Santiago Bernabéu, es un ícono del fútbol internacional.
       El Real Madrid es el club con más títulos de Champions League (15). Ha ganado 35 títulos de La Liga, 19 Copas del Rey y 5 mundiales de clubes considerandolo como el mejor club del siglo XX por la FIFA. 
@@ -17,7 +20,7 @@ const equipos = [
   {
     nombre: "AC Milan",
     escudo: "/images/milan.png",
-    // color: "linear-gradient(to right, #8B0000, #000000)", // Degradado rojo y negro
+    // color: "8px solid #d32f2f", // Rojo (tono más suave)
     borderTop: "8px solid transparent", // Transparent para el gradiente
     background: "linear-gradient(90deg, #ce2324, #000000)", // Gradiente rojo y negro
     info: `
@@ -29,7 +32,9 @@ const equipos = [
   {
     nombre: "FC Barcelona",
     escudo: "/images/barcelona.png",
-    color: "#a50044", // Rojo granate (color del uniforme)
+    //color: "#a50044", // Rojo granate (color del uniforme)
+    borderTop: "8px solid transparent", // Transparent para el gradiente
+    background: "linear-gradient(90deg, #a50044, #0033a0)", // Granate y Azul
     info: `
       Fundado el 29 de noviembre de 1899, el Barcelona ha ganado 5 Champions League, 27 títulos de La Liga y 31 Copas del Rey.
       Es famoso por su academia 'La Masía', que ha formado a jugadores como Messi, Xavi e Iniesta. Su estadio, el Camp Nou, es uno de los más grandes e icónicos. 
@@ -39,7 +44,9 @@ const equipos = [
   {
     nombre: "Liverpool",
     escudo: "/images/liverpool.png",
-    color: "#c8102e", // Rojo vibrante (color del uniforme)
+    //color: "#c8102e", // Rojo vibrante (color del uniforme)
+    borderTop: "8px solid transparent", // Transparent para el gradiente
+    background: "linear-gradient(90deg, #c8102e, #ffffff)", // Rojo y Blanco
     info: `
       Fundado el 3 de junio de 1892, el Liverpool es el club más exitoso de Inglaterra en competiciones europeas, con 6 Champions League y ganando 19 títulos de la Premier League y 8 Copas nacionales. 
       Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush, quienes marcaron épocas gloriosas en la historia del club.
@@ -50,7 +57,7 @@ const equipos = [
   {
     nombre: "FC Bayern",
     escudo: "/images/bayern.png",
-    //color: "linear-gradient(to right, #005BAC, #DC052D)", // Azul a Rojo
+    //color: "8px solid #c62828", // Rojo (tono más fuerte)
     borderTop: "8px solid transparent", // Transparent para el gradiente
     background: "linear-gradient(90deg, #dc052d, #005bac)", // Gradiente rojo y azul
     info: `
@@ -62,7 +69,7 @@ const equipos = [
   {
     nombre: "Manchester United",
     escudo: "/images/Manchester_United.png",
-    //color: "linear-gradient(to right, #DA291C, #FFCC00)", // Rojo a Amarillo
+    //color: "8px solid #b71c1c", // Rojo (tono más oscuro)
     borderTop: "8px solid transparent", // Transparent para el gradiente
     background: "linear-gradient(90deg, #da291c, #febd02)", // Gradiente rojo y amarillo
     info: `
