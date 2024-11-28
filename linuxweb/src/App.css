@@ -12,7 +12,6 @@ body {
   color: #333;
   padding: 40px 0;
   text-align: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   position: relative; 
   z-index: 10; /* Asegura que esté por encima del contenido */
