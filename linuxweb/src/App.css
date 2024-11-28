@@ -14,8 +14,12 @@ body {
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  background-color: #fff; /* Asegura que el fondo sea blanco y uniforme */
+  position: relative; /* Hace que el header se quede en su lugar sin desplazamiento */
+  z-index: 10; /* Asegura que esté por encima del contenido */
 }
 
+/* Título del header */
 h1 {
   margin: 0;
   font-size: 2rem;
@@ -30,6 +34,7 @@ h1 {
   max-width: 1200px;
   align-items: center;
   height: calc(100vh - 120px); /* Ajusta la altura de las tarjetas */
+  padding-top: 20px; /* Ajusta el espaciado entre el header y las tarjetas */
 }
 
 /* Estilo de las tarjetas */
@@ -40,8 +45,14 @@ h1 {
   width: 280px;
   padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease; /* Agrega animación en hover */
 }
 
+.tarjeta:hover {
+  transform: translateY(-10px); /* Efecto hover de levantamiento */
+}
+
+/* Estilo del escudo */
 .escudo {
   width: 120px;
   height: 120px;
@@ -49,9 +60,23 @@ h1 {
   margin-bottom: 15px;
 }
 
+/* Estilo de la información */
 .info p {
   margin: 5px 0;
   font-size: 0.9rem;
   text-align: justify;
   color: #555;
+}
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+  .tarjetas-container {
+    flex-direction: column; /* Cambia a diseño en columna para pantallas pequeñas */
+    align-items: center;
+    height: auto; /* Permite desplazamiento si el contenido excede */
+  }
+
+  .tarjeta {
+    margin-bottom: 20px; /* Añade separación entre tarjetas */
+  }
 }
