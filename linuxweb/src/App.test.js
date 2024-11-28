@@ -8,7 +8,7 @@ describe('App Component', () => {
     // Buscar los nombres de los equipos en la página
     const equipos = screen.getAllByRole('heading', { level: 2 }); 
     
-    // Verificar que hay más de un jugador
+    // Verificar que hay más de un club en la página
     expect(equipos.length).toBeGreaterThanOrEqual(3);
   });
 
@@ -20,6 +20,17 @@ describe('App Component', () => {
     
     // Verificar que el texto del encabezado contiene el emoji "⚽"
     expect(heading.textContent).toContain("⚽");
+  });
+
+  test('renders a heading with the text containing exactly two "⚽" emojis', () => {
+    render(<App />);
+  
+    // Buscar el encabezado con nivel 1
+    const heading = screen.getByRole('heading', { level: 1 });
+  
+    // Verificar que el texto contiene exactamente dos emojis "⚽"
+    const emojiCount = (heading.textContent.match(/⚽/g) || []).length;
+    expect(emojiCount).toBe(2);
   });
 
 });

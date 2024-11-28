@@ -10,8 +10,8 @@ const equipos = [
     info: `
       Fundado el 6 de marzo de 1902, siendo su estadio, el Santiago Bernabéu, es un ícono del fútbol internacional.
       El Real Madrid es el club con más títulos de Champions League (15). Ha ganado 35 títulos de La Liga, 19 Copas del Rey y 5 mundiales de clubes considerandolo como el mejor club del siglo XX por la FIFA. 
-      Fue el hogar de figuras legendarias como Alfredo Di Stéfano, Raúl, Cristiano Ronaldo, Zinedine Zidane y más.
-      Entre sus momentos históricos, destacan "La Quinta del Buitre" y la era de los Galácticos. Su filosofía se centra en la grandeza y la excelencia tanto dentro como fuera del campo.
+      Fue el hogar de figuras legendarias como Alfredo Di Stéfano, Raúl, Cristiano Ronaldo, Zinedine Zidane y más. Sus momentos históricos, destacan "La Quinta del Buitre" y la era de los Galácticos. 
+      Su filosofía se centra en la grandeza y la excelencia tanto dentro como fuera del campo.
     `,
   },
   {
@@ -39,8 +39,8 @@ const equipos = [
     escudo: "/images/liverpool.png",
     color: "#c8102e", // Rojo vibrante (color del uniforme)
     info: `
-      Fundado el 3 de junio de 1892, el Liverpool es el club más exitoso de Inglaterra en competiciones europeas, con 6 Champions League.
-      Ha ganado 19 títulos de la Premier League y 8 Copas nacionales. Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush, quienes marcaron épocas gloriosas en la historia del club.
+      Fundado el 3 de junio de 1892, el Liverpool es el club más exitoso de Inglaterra en competiciones europeas, con 6 Champions League y ganando 19 títulos de la Premier League y 8 Copas nacionales. 
+      Ha tenido jugadores icónicos como Steven Gerrard, Kenny Dalglish e Ian Rush, quienes marcaron épocas gloriosas en la historia del club.
       El técnico Jürgen Klopp lideró al equipo para conquistar su primer título de Premier League en 2020, tras una sequía de 30 años.
       Liverpool es sinónimo de pasión y resiliencia, reflejando el espíritu de su ciudad.
     `,

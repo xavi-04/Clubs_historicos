@@ -1,32 +1,32 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9; /* Fondo minimalista */
+  background-color: #f4f4f9; 
   color: #333;
-  overflow: auto; /* Permite el desplazamiento si es necesario */
+  overflow: auto; 
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asegura que la página ocupe toda la altura */
+  min-height: 100vh; 
 }
 
 /* Estilo del header */
 .header {
   color: #ffffff;
-  padding: 5vh 0; /* Utiliza unidades vh para que sea proporcional al tamaño de la pantalla */
+  padding: 5vh 0; 
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5vh; /* Ajusta el espacio entre el header y las tarjetas */
-  background-color: #282828; /* Asegura que el fondo sea blanco y uniforme */
-  position: relative; /* Hace que el header se quede en su lugar sin desplazamiento */
-  z-index: 10; /* Asegura que esté por encima del contenido */
+  margin-bottom: 5vh; 
+  background-color: #282828; 
+  position: relative;
+  z-index: 10; 
   width: 100%;
 }
 
 /* Título del header */
 h1 {
   margin: 0;
-  font-size: 2.5rem; /* Ajusta el tamaño del texto para que sea proporcional */
-  font-weight: 600; /* Hace que el título sea un poco más destacado */
+  font-size: 2.5rem; 
+  font-weight: 600; 
 }
 
 /* Contenedor de tarjetas */
@@ -37,11 +37,11 @@ h1 {
   margin: 0 auto;
   max-width: 1200px;
   align-items: center;
-  flex-wrap: wrap; /* Permite que las tarjetas se acomoden en varias filas si es necesario */
+  flex-wrap: wrap; 
   justify-content: space-around;
-  padding: 20px 0; /* Agrega espacio en la parte superior e inferior del contenedor */
-  max-height: 70vh; /* Limita la altura máxima del contenedor para dejar espacio para el desplazamiento */
-  overflow-y: auto; /* Habilita el desplazamiento vertical */
+  padding: 20px 0; 
+  max-height: 70vh; 
+  overflow-y: auto; 
 }
 
 /* Estilo de las tarjetas */
@@ -49,12 +49,12 @@ h1 {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 320px; /* Aumenta ligeramente el tamaño de las tarjetas */
-  height: 460px; /* Hace que todas las tarjetas tengan la misma altura */
+  width: 320px; 
+  height: 460px; 
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease; /* Agrega animación en hover */
-  overflow: hidden; /* Evita que el contenido se desborde de las tarjetas */
+  transition: transform 0.3s ease; 
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -62,7 +62,7 @@ h1 {
 
 /* Efecto hover de las tarjetas */
 .tarjeta:hover {
-  transform: translateY(-10px); /* Efecto hover de levantamiento */
+  transform: translateY(-10px); 
 }
 
 /* Estilo del escudo */
@@ -70,7 +70,7 @@ h1 {
   width: 120px;
   height: 120px;
   object-fit: contain;
-  margin: 0 auto 15px auto; /* Centra el escudo horizontalmente y agrega margen abajo */
+  margin: 0 auto 15px auto; 
 }
 
 /* Estilo de la información */
@@ -79,14 +79,14 @@ h1 {
   font-size: 0.9rem;
   text-align: justify;
   color: #555;
-  line-height: 1.6; /* Mejora la legibilidad del texto */
-  word-wrap: break-word; /* Evita que el texto se desborde fuera del contenedor */
+  line-height: 1.6; 
+  word-wrap: break-word; 
 }
 
 /* Espaciado entre los elementos dentro de la tarjeta */
 .tarjeta > h2 {
   margin: 10px 0 10px;
-  font-size: 1.4rem; /* Asegura que el tamaño del texto sea adecuado */
+  font-size: 1.4rem; 
   font-weight: 600;
   color: #333;
 }
@@ -94,14 +94,14 @@ h1 {
 /* Ajustes responsivos */
 @media screen and (max-width: 768px) {
   .tarjetas-container {
-    flex-direction: column; /* Cambia a diseño en columna para pantallas pequeñas */
+    flex-direction: column; 
     align-items: center;
-    height: auto; /* Permite desplazamiento si el contenido excede */
-    padding-top: 20px; /* Agrega espacio arriba de las tarjetas */
+    height: auto; 
+    padding-top: 20px; 
   }
 
   .tarjeta {
-    margin-bottom: 20px; /* Añade separación entre tarjetas */
+    margin-bottom: 20px;
   }
 
   /* Ajuste de tamaño de título en pantallas pequeñas */
